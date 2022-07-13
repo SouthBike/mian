@@ -1,0 +1,358 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    font-family: 'Helvetica South';
+}
+
+@font-face {
+    font-family: 'Helvetica South';
+    src: local(Helvetica), url('../Font/Helvetica.ttf');
+}
+
+#main-box{
+    height: calc(100vh - 115px);
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-box-container{
+    border: 1px solid green;
+    width: 850px;
+    height: 700px;
+    background-color: green;
+    display: flex;
+}
+
+.south-logo{
+    display: flex;
+    width: 100px;
+    height: 50px;
+    margin-right:80px;
+}
+
+.header-container-top{
+	background-color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 50px;
+	border-bottom: 1px solid grey;
+}
+
+.container-box-header{
+	width: 750px;
+	height: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0px 10px 0px -55px;
+	font-size: 10px;
+	text-transform: uppercase;
+}
+
+.box-central{
+    display: flex;
+}
+
+.box1, .box2, .box3{
+	display: flex;
+	color: white;
+}
+
+.box1{
+	transform: translateX(20px);
+}
+
+.box1 i{
+	margin-right: 5px;
+	font-size: 15px;
+	transform: translateY(-2.5px);
+    color: white;
+}
+
+.box2 i{
+	margin-right: 5px;
+	font-size: 15px;
+	transform: translateY(-2.5px);
+    color: white;
+}
+
+.box3 i{
+	margin: 0px 5px 0px 10px;
+	font-size: 15px;
+	transform: translateY(-2.5px);
+    color: white;
+}
+
+.header-top-box-icon div, a{
+    transform: translateX(10px);
+}
+
+.section-header a{
+    margin-left: 20px;
+    color: white;
+}
+
+.box-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border-bottom: 1px solid grey;
+}
+
+#header{
+    width: 720px;
+    height: 100px;
+    display: flex;
+    gap: 210px;
+    align-items: center;
+    text-transform: uppercase;
+    padding: 1rem;
+    background-color: black;
+}
+
+#nav{
+    font-size: 11px;
+}
+
+#menu a:hover{
+    color: grey;
+    transition: .5s;
+    border-bottom: 1px solid grey;
+}
+
+#menu{
+    display: flex;
+}
+
+#menu a{
+    display: block;
+    padding: 10px;
+}
+
+#btn-mobile{
+    display: none;
+}
+
+.container_footer{
+    background-color: black;
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    border-top: 1px solid grey;
+    padding: 20px 0px 20px 0px;
+}
+
+.box-footer{
+    flex-direction: column;
+}
+
+.container_footer img{
+    width: 250px;
+    height: 100px;
+}
+
+.Flex-esp li{
+    font-size: 13px;
+	padding: 10px;
+    color: white;
+}
+
+.box-icons-seg{
+   display: flex;
+   justify-content: center;
+   background-color: black;
+}
+
+.box-icons-seg i{
+    padding: 10px 5px 10px 5px;
+    font-size: 25px;
+    margin-top: -25px;
+    color: white;
+}
+
+.Flex-esp ul{
+    display: flex;
+}
+
+.Flex-esp a{
+    letter-spacing: 0.5px;
+    margin-bottom: 15px;
+}
+
+.Flex-esp  ul a li:hover{
+    color: grey;   
+    transition: 0.5s linear;
+	border-bottom: 1px solid grey;
+}
+
+.container_footer-direitos{
+    text-align: center;
+    font-size: 11px;
+    background-color: black; 
+    padding-bottom: 30px;
+}
+
+.logo-img-south{
+    margin-top: -25px;
+}
+
+.main-box-img{
+    height: calc(100vh - 100px);
+    overflow: hidden;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-box-center img{
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+}
+
+#header{
+    display: flex;
+    justify-content: center;
+}
+
+#nav{
+    display: flex;
+    justify-content: center;
+}
+
+.none{
+    display: none;
+}
+
+.logo-south{
+    width: 150px;
+    transform: translateX(-10px);
+}
+
+@media (max-width: 900px){
+    #btn-mobile{
+        display: block;
+    }
+    #header{
+        display: flex;
+        justify-content: flex-start;
+        height: 100px;
+        width: 100vw;
+    }
+    .logo-south{
+        display: none;
+    }
+    #logo img{
+        width: 150px;
+    }
+    .none{
+        display: block;
+        padding: -5px;
+        background-color: black;
+    }
+    .none i{
+        padding: 10px;
+        color: white;
+    }
+    .none span{
+        padding: 9px;
+        color: white;
+    }
+    #menu{
+        display: block;
+        position: absolute;
+        width: 50%;
+        top: 90px;
+        right: 50%;
+        background-color: rgba(0, 0, 0, 0.247);
+        height: 80px;
+        transition: .6s;
+        z-index: 1000;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+    #menu a:hover{
+      color: white;
+      border-bottom: 1px solid rgba(0, 0, 0, 0);
+      transition: 0s;
+    }
+    #nav.active #menu{
+        height: calc(100vh - 100px);
+        visibility: visible;
+        overflow-y: auto;
+    }
+    #menu a{
+        padding: 1rem 0;
+        margin: 0 1rem;
+
+    }
+    #btn-mobile{
+        display: flex;
+        padding: .4rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: .5rem;
+        align-items: center;
+    }
+    #hamburger{
+        border-top: 2px solid;
+        width: 20px;
+    }
+    #hamburger::after, #hamburger::before{
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background-color: currentColor;
+        margin-top: 5px;
+        transition: .3s;
+        position: relative;
+    }
+    #nav.active #hamburger{
+        border-top-color: transparent;
+    }
+    #nav.active #hamburger::before{
+        transform: rotate(135deg);
+       
+    }
+    #nav.active #hamburger::after{
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+}
+
+
+@media (max-width: 900px){
+    .header-container-top, .nav-home{
+        display: none;
+    }
+    ul{
+        margin: 10px 0 10px 0;
+        display: flex;
+        justify-content: center;
+    }
+    .container_footer{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        height: 150px;
+    }
+    .container_footer img{
+        width: 200px;
+        height: 70px;
+    }
+    .container_footer-direitos, .Flex-esp li{
+        font-size: 15px;
+    }
+}

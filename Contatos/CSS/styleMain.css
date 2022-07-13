@@ -1,0 +1,41 @@
+.box1-contatos{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+    border: 1px solid red;
+    padding: 20px;
+}
+
+.box1-contatos div{
+    border: 1px solid grey;
+    padding: 20px;
+}
+
+.box2-contatos{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    border: 1px solid blue;
+    padding: 20px;
+}
+
+.box2-contatos div{
+    padding: 5px 0px;
+}
+
+.email-telefone{
+    display: flex;
+}
+
+@media (max-width: 900px){
+    .section-box-container{
+        display: block;
+    }
+    .container_footer{
+        margin-top: 100px;
+    }
+    #email, #tel{
+       
+    }
+}
